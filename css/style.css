@@ -16,17 +16,19 @@
 .img{
     margin-top: 50px;
     border-radius: 18px;
-    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../resources/Banner\ Image.png');
+    
+     background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../resources/Banner\ Image.png'); 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     color: white;
-    padding: 200px 0;
+    padding: 177px 0;
     text-align: center;
+    
 }
 .img h3{
 
 text-align: center;
-font-family: Merriweather;
+
 font-size: 32px;
 font-style: normal;
 font-weight: 400;
@@ -34,12 +36,12 @@ line-height: normal;
 }
 .img h1{
 
-font-family: Merriweather;
+
 font-size: 72px;
 font-style: normal;
 font-weight: 900;
 line-height: 95px;
-width: 40%; 
+width: 80%; 
 text-align: center;
 margin: 0 auto;
 }
@@ -54,7 +56,7 @@ main{
 *********************/
 
 section{
-    margin: 120px 0;
+    margin-bottom: 120px;
 }
 .off{
     color: #F00;
@@ -62,7 +64,13 @@ section{
 .discount{
     padding: 0 260px;
     text-align: center;
+   
 }
+.center{
+    
+    display: flex;
+    justify-content: center;
+} 
 .dis-title1{
 font-size: 88px;
 font-weight: 700;
@@ -88,7 +96,7 @@ margin-bottom: 16px;
     background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%),url('../resources/Vectorrr.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 126px 110px 70px 126px;
+    padding: 50px 108px 50px 120px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -98,7 +106,7 @@ margin-bottom: 16px;
 .wel-title{
   font-size: 64px;
   font-weight: 900;
-  width: 60%;
+  width: 90%;
 } 
 .wel-desc{
     font-size: 18px;
@@ -113,7 +121,10 @@ margin-bottom: 16px;
     padding: 16px 32px;
     border-radius: 5px;
     border: 0;
-    font-size: 20px;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: rgb(226, 81, 81);
 }
 
 /* Info Section 
@@ -135,10 +146,12 @@ margin-bottom: 16px;
 /* Offer Section
 ******************/
 .offers{
- display: grid;
- grid-template-columns: repeat(3,1fr);
- column-gap: 70px;
- justify-content: space-between;
+  /* display: grid;
+ grid-template-columns: repeat(3,1fr);  */
+ display: flex;
+ justify-content:space-between;
+ gap: 20px;
+ 
  align-items: center;
 }
 .offer {
@@ -159,24 +172,48 @@ margin-bottom: 24px;
  font-weight: 400;
  line-height: 32px;
  color: rgba(7, 2, 17, 0.60);
+ width: 90%;
 }
 .offer-img{
-    width: 463px;
-    height: 463px;
-    padding:10px;
+    width: 450px;
+    height: 450px;
+
+    padding:0px;
+    width: 100%;
     
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    border:20px solid #F00;
+   border-radius: 50%;
+    border: 10px solid #F00;
+    margin-right: 40px;
 
 }
 .padd{
     margin-top: 16px;
     margin-bottom: 45px;
 }
-
+/* Holiday Section
+*******************/
+.holiday{
+    text-align: center;
+}
+.holiday-title1{
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+.holiday-title2{
+    font-size: 72px;
+    font-weight: 900;
+    margin-top: 16px;
+    margin-bottom: 28px;
+}
+.holiday-desc{
+margin-bottom: 64px;
+line-height: 32px;
+padding: 0 50px;
+}
 /* Portfolio Section
 **********************/
 .port-desc{
@@ -188,11 +225,17 @@ margin-bottom: 24px;
     font-weight: 500;
 }
 .items{
-     display:grid;
+     /* display:grid;
     grid-template-columns: repeat(3,1fr);
   row-gap: 14px; 
-  column-gap: 10px;
+  column-gap: 10px; */
+  display: flex;
  
+}
+.item-img{
+    background-color: yellow;
+    /* height: 400px; */
+    width: 100%;
 }
 
 /* Subscribe Section */
@@ -223,4 +266,37 @@ margin-bottom: 24px;
 .input,.ctn{
     margin-top: 20px;
     
+}
+
+/* Footer Section */
+footer{
+    padding: 120px 140px;
+    background-color: black;
+    color: white;
+    
+}
+footer h2{
+    font-size: 24px;
+    font-weight:500;
+    line-height: 40px;
+    
+}
+.container-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-one > h2{
+    width: 375px;
+}
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.container-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
