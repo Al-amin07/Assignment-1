@@ -229,9 +229,38 @@ padding: 0 50px;
     background-position: bottom,top right;
     
 }
-.banner2 img{
-    display: inline;
+.banner2 > img{
+  position: absolute;
    
+}
+.image-container{
+   
+    height: 630px;
+    position: relative;
+}
+.holiday-img{
+ position: absolute;
+}
+#img1{
+ z-index: 1;
+ top: 80px;
+ right: 280px;
+}
+#img2{
+  left: -100px;
+  bottom: -20px;
+  z-index: 1;
+  /* mix-blend-mode: darken; */
+}
+#img3{
+  bottom: 195px;
+  right: 0;
+}
+#img4{
+   
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* Portfolio Section
