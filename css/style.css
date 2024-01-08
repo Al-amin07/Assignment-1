@@ -146,13 +146,11 @@ margin-bottom: 16px;
 /* Offer Section
 ******************/
 .offers{
-  /* display: grid;
- grid-template-columns: repeat(3,1fr);  */
- display: flex;
- justify-content:space-between;
- gap: 20px;
- 
+   display: grid;
+ grid-template-columns: repeat(3,1fr);  
+
  align-items: center;
+ 
 }
 .offer {
  
@@ -175,18 +173,24 @@ margin-bottom: 24px;
  width: 90%;
 }
 .offer-img{
-    width: 450px;
-    height: 450px;
-
+    width: 400px;
+    height: 400px;
     padding:0px;
     width: 100%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
-   border-radius: 50%;
+    border-radius: 50%;
     border: 10px solid #F00;
-    margin-right: 40px;
+    
+  
+
+}
+.offer-img img{
+    width: 90%;
+}
+.right{
+    margin-left: 70px;
 
 }
 .padd{
@@ -214,6 +218,19 @@ margin-bottom: 64px;
 line-height: 32px;
 padding: 0 50px;
 }
+.banner2{
+    
+     background-image: url('../resources/Rectangle\ 2.png'),url('../resources/Rectangle\ 1.png'); 
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: bottom,top right;
+    
+}
+.banner2 img{
+    display: inline;
+   
+}
+
 /* Portfolio Section
 **********************/
 .port-desc{
@@ -225,20 +242,24 @@ padding: 0 50px;
     font-weight: 500;
 }
 .items{
-     /* display:grid;
+    /* width: 100%; */
+     display:grid;
     grid-template-columns: repeat(3,1fr);
-  row-gap: 14px; 
-  column-gap: 10px; */
-  display: flex;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 20px;
+  
+
  
 }
-.item-img{
-    background-color: yellow;
-    /* height: 400px; */
+.item img{
+    
+    
     width: 100%;
 }
 
-/* Subscribe Section */
+/* Subscribe Section 
+**********************/
 #email{
     padding: 16px 32px;
     font-size: 20px;
